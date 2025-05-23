@@ -57,7 +57,7 @@
                             </MenuItem>
                             <MenuItem Header="Редактировать">
                                 <MenuItem Header="Обрезать">
-                                    <MenuItem Header="Обрезать"/>
+                                    <MenuItem Header="Обрезать квадрат"/>
                                     <MenuItem Header="Произвольная обрезка"/>
                                 </MenuItem>
                                 <MenuItem Header="Изменить цвет"/>
@@ -73,6 +73,13 @@
                             <ListBoxItem Content="Ретуширование" FontSize="16"  Margin="10,10,10,10"/>
                             <ListBoxItem Content="Исправление недостатков" FontSize="16"  Margin="10,10,10,10"/>
                             <ListBoxItem Content="Изменение фона" FontSize="16"  Margin="10,10,10,10"/>
+                            <ListBox.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Редактировать"/>
+                                    <MenuItem Header="Удалить"/>
+                                    <MenuItem Header="Создать на основе"/>
+                                </ContextMenu>
+                            </ListBox.ContextMenu>
                            
                         </ListBox>
                     </StackPanel>
